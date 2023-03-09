@@ -71,16 +71,6 @@ public class CustomList extends ArrayAdapter<City> {
     public boolean hasCity(City city){
         return cities.contains(city);
     }
-    /**
-     * This returns a sorted list of cities
-     * @return
-     * Return the sorted list
-     */
-    public List getCities() {
-        List list = cities;
-        Collections.sort(list);
-        return list;
-    }
 
     /**
      * If the given city is in the list, then delete. Otherwise throw exception.
